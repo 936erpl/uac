@@ -1,3 +1,7 @@
 dll-to-bytes.py
 payload.dll
 temp.bin
+bypass.spec
+dist/
+build/
+.git/
