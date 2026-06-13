@@ -19,10 +19,9 @@ Il démontre comment un processus avec un niveau d'intégrité moyen peut intera
 ### Prerequisites
 
 ```bash
-Node.js >= 16.0.0
-npm or yarn
-Python >= 3.10
+Python += v3.12
 pywin32
+ctypes
 ```
 
 ### Installation
@@ -37,7 +36,14 @@ cd uac
 2. Install dependencies
 
 ```bash
+Option 1 :
+pip install -r requirements.txt
+
+or (both are the same)
+
+Option 2 :
 pip install pywin32
+pip install ctypes
 ```
 
 3. Start the project
@@ -51,7 +57,7 @@ python bypass.py
 For more details, see the complete documentation:
 
 ```text
-./docs/technical_reference.md
+./uac/docs/UAC-Documentation.md
 ```
 
 ## Technology Stack
@@ -62,12 +68,18 @@ For more details, see the complete documentation:
 
 ## Usage Example
 
-```python
-// Basic example
-from core import task_manager
-result = task_manager.execute_payload(target_task="CDSSync")
-if result:
-    print("Payload injected successfully.")
+```bash
+// Basic example of the bypass.py (opens a admin cmd without triggering uac)
+C:\Users\redacted\Desktop\redacted\redacted>python bypass.py
+
+                    .___       ___.             ________________  ________
+  _____ _____     __│ _╱____   ╲_ │__ ___.__.  ╱  _____╱╲_____  ╲╱   __   ╲
+ ╱     ╲╲__  ╲   ╱ __ │╱ __ ╲   │ __ <   │  │ ╱   __  ╲   _(__  <╲____    ╱
+│  Y Y  ╲╱ __ ╲_╱ ╱_╱ ╲  ___╱   │ ╲_╲ ╲___  │ ╲  │__╲  ╲ ╱       ╲  ╱    ╱
+│__│_│  (____  ╱╲____ │╲___  >  │___  ╱ ____│  ╲_____  ╱╱______  ╱ ╱____╱
+      ╲╱     ╲╱      ╲╱    ╲╱       ╲╱╲╱             ╲╱        ╲╱
+
+>>> [!] Successful.
 ```
 
 ## Contributing
@@ -86,10 +98,11 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ## Author
 
-**Your Name**
+**639**
 
 * GitHub: https://github.com/936erpl
 * Contact: cybermuxcorp@gmail.com
+* Discord: `reversinglabs`
 
 ## Support
 
